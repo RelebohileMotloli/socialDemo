@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-----Fontawesome---->
+    <script src="https://kit.fontawesome.com/70d60df8d2.js" crossorigin="anonymous"></script>
+    <title>Mobilettrek</title>
+</head>
+<body>
+    
+<nav>-
+    <div class="container">
+        <h2 class="logo">ChatZero</h2>
+        <div class="search-bar">
+            <i class="uil uil-search"></i>
+            <input
+            type="text"
+            placeholder="Search for creators, inspirations and projects"
+          />
+        </div>
+        <div class="create">
+            <label class="btn btn-primary" for="create-post">Create</label>
+            <div class="profile-pic">
+                <img src="pictures/profile.jpeg" alt="pic 1" />
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="main">
+    <div class="container">
+        <div class="left">
+            <a class="profile">
+                <div class="profile-pic">
+                    <img src="pictures/profile.jpeg" />
+                </div>
+                <div class="handle">
+                    <h4>Relebohile</h4>
+                    <p class="text-muted">@Ree</p>
+                </div>
+            </a>
+            <div class="sidebar">
+                <a class="menu-item active">
+                    <span><i class="uil uil-home"></i></span>
+                    <h3>Home</h3>
+                </a>
+                <a class="menu-item">
+                    <span><i class="uil uil-compass"></i></span>
+                    <h3>Explore</h3>
+                </a>
+                <a class="menu-item" id="notifications">
+                    <span
+                ><i class="uil uil-bell"
+                  ><small class="notification-count">9+</small></i
+                ></span>
+                    <h3>Notifications</h3>
+                    <div class="notifications-popup">
+                        <div>
+                            <div class="profile-pic">
+                                <img src="pictures/abii1.jpg" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Abigail Motloli</b> posted a story
+                                <small class="text-muted">2 HOURS AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="pictures/Joel1.jfif" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Joel Lyyn</b> commented on your post
+                                <small class="text-muted">1 HOUR AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="pictures/luzolo2.jfif" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Luzolo mpinya</b> and 210 other liked your post
+                                <small class="text-muted">4 MINUTES AGO</small>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="pictures/Auntie.png" />
+                            </div>
+                            <div class="notification-body">
+                                <b>Annah Khasake</b> started following you
+                                <small class="text-muted"> 11 HOURS AGO</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="menu-item" id="messages-notifications">
+                    <span>
+                <i class="uil uil-envelope">
+                  <small class="notification-count">6</small>
+                </i>
+              </span>
+                    <h3>Messages</h3>
+                </a>
+                <a class="menu-item">
+                    <span><i class="uil uil-bookmark"></i></span>
+                    <h3>Bookmarks</h3>
+                </a>
+                <a class="menu-item">
+                    <span><i class="uil uil-analytics"></i></span>
+                    <h3>Analytics</h3>
+                </a>
+                <a class="menu-item">
+                    <span><i class="uil uil-palette"></i></span>
+                    <h3>Theme</h3>
+                </a>
+                <a class="menu-item">
+                    <span><i class="uil uil-setting"></i></span>
+                    <h3>Settings</h3>
+                </a>
+
+                <label class="btn btn-primary" for="create-post">Create Post</label>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="stories">
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/profile.jpeg" alt="" />
+                    </div>
+                    <p class="name">Your Story</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/abii1.jpg" alt="" />
+                    </div>
+                    <p class="name">Abegail Motloli</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/couple.jfif" alt="" />
+                    </div>
+                    <p class="name">Mabasia  Motloli</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/nkcubeko1.jfif" alt="" />
+                    </div>
+                    <p class="name">Nkcubeko Mafresh</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/Asa1.jpeg" alt="" />
+                    </div>
+                    <p class="name">Asa Mabena</p>
+                </div>
+                <div class="story">
+                    <div class="profile-pic">
+                        <img src="pictures/rethabile1.jfif" alt="" />
+                    </div>
+                    <p class="name">Rethabile Motloli</p>
+                </div>
+            </div>
+
+            <form class="create-post">
+                <div class="profile-pic">
+                    <img src="pictures/profile.jpeg" alt="" />
+                </div>
+                <input
+              type="text"
+              placeholder="What's on your mind Ree?"
+              id="create-post"
+            />
+                <input type="submit" value="Post" class="btn btn-primary" />
+            </form>
+
+            <div class="feeds">
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/couple.jfif" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Mabasia Motloli</h3>
+                            <small>Carletonville, 9 MINUTES AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/couple.jfif" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/abii1.jpg" /></span>
+                        <span><img src="pictures/Joel2.jpeg" /></span>
+                        <span><img src="pictures/Asa1.jpeg" /></span>
+                        ,
+                        <p>Liked by <b>Abegail Motloli</b> and <b>220 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Phindi </b> Sbali ukhethile la.
+                            <span class="hash-tag">#coupleGoals</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 130 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/abii1.jpg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Abegail Motloli</h3>
+                            <small>Midrand, 1 HOUR AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/abii3.jpg"" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/kutse.jpg" /></span>
+                        <span><img src="pictures/profile.jpeg" /></span>
+                        <span><img src="pictures/nkcubeko1.jfif" /></span>
+                        ,
+                        <p>Liked by <b>Nkcubeko Mafresh</b> and <b>188 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Dimakatso</b> Saleforce Workshop.
+                            <span class="hash-tag">#WomenInTech</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 40 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/bicycle.png" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Tse'el Motloli</h3>
+                            <small>Maseru, 2 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/feed7.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/bicycle.png" /></span>
+                        <span><img src="pictures/Auntie.png" /></span>
+                        <span><img src="pictures/Neo3.jpeg" /></span>
+                        ,
+                        <p>Liked by <b>Frank Mpye</b> and <b>130 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Tse'ele Motloli</b> Kedi weather, Coffe will do.
+                            <span class="hash-tag">#SnowTime</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 15 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/neo2.jpeg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Neo Mazibuko</h3>
+                            <small>Blybank, 3 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img  src="pictures/Neo4.jpg" controls alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/Asa1.jpeg" /></span>
+                        <span><img src="pictures/back.jpg" /></span>
+                        <span><img src="pictures/kutse.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Tumelo katana</b> and <b>280 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Neo Mazibuko</b> It's  always a pleasure chilling with you Mfo.
+                            <span class="hash-tag">#Weekend</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 110 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/rethabile1.jfif" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Rethabile Motloli</h3>
+                            <small>East London, 1 DAY AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/feed2.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/Asa4.jpeg" /></span>
+                        <span><img src="pictures/couple.jfif" /></span>
+                        <span><img src="pictures/nkcubeko1.jfif" /></span>
+                        ,
+                        <p>Liked by <b>Enrest Achiever</b>snd <b>420 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Rethabile Motloli</b> A qualified Software Developer, Mshanankhone  ke motlotlo.
+                            <span class="hash-tag">#Gradute</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 910 comments</div>
+                </div>
+
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/Asa2.jpeg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>Asa Mabena</h3>
+                            <small>Belville, 3 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/Asa1.jpeg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/Joel3.jpeg" /></span>
+                        <span><img src="pictures/luzolo1.jfif" /></span>
+                        <span><img src="pictures/abii1.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Ayabonga Mntshobelo</b> and <b>150 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>Asa Mabena</b> Let's paint the town in colours.
+                            <span class="hash-tag">#RainbowNation</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 30 comments</div>
+                </div>
+                <div class="feed">
+                    <div class="head"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="pictures/profile1.jpeg" alt="" />
+                        </div>
+                        <div class="info">
+                            <h3>YOU</h3>
+                            <small>Southernwood, 11 HOURS AGO</small>
+                        </div>
+                        <span class="edit"><i class="uil uil-ellipsis-h"></i></span>
+                    </div>
+
+                    <div class="photo">
+                        <img src="pictures/back.jpg" alt="" />
+                    </div>
+
+                    <div class="action-button">
+                        <div class="interaction-button">
+                            <span><i class="uil uil-thumbs-up"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share"></i></span>
+                        </div>
+                        <div class="bookmark">
+                            <span><i class="uil uil-bookmark"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <span><img src="pictures/Asa1.jpeg" /></span>
+                        <span><img src="pictures/kutse.jpg" /></span>
+                        <span><img src="pictures/abii1.jpg" /></span>
+                        ,
+                        <p>Liked by <b>Abegail Motloli</b> and <b>530 others</b></p>
+                    </div>
+
+                    <div class="caption">
+                        <p>
+                            <b>You </b> Let's go play at the zoo.
+                            <span class="hash-tag">#Zoolake</span>
+                        </p>
+                    </div>
+                    <div class="comments text-muted">View all 190 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Messages</h4>
+                    <span><i class="uil uil-edit"></i></span>
+                </div>
+
+                <div class="search-bar">
+                    <span><i class="uil uil-search"></i></span>
+                    <input
+                type="text"
+                placeholder="Search Messages"
+                id="message-search"
+              />
+                </div>
+
+                <div class="category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-requests">Requests(12)</h6>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/rethabile1.jfif" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Rethabile Motloli</h5>
+                        <p class="text-muted">MshanaNkgono things are falling into place.</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/profile3.jpg" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>General</h5>
+                        <p class="text-bold">3 New Messages</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/abii1.jpg" />
+                    </div>
+                    <div class="message-body">
+                        <h5>Abegail Motloli</h5>
+                        <p class="text-muted">Lol What are you up to?</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/kutse.jpg" />
+                    </div>
+                    <div class="message-body">
+                        <h5>Ayabonga Mntshobelo</h5>
+                        <p class="text-bold">Mfo siLate, Vuka!!!</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/willam.jpg" />
+                    </div>
+                    <div class="message-body">
+                        <h5>William Seeta</h5>
+                        <p class="text-muted">I'll be there in few min bro</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-pic">
+                        <img src="pictures/Asa1.jpeg" />
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Asa Mabena</h5>
+                        <p class="text-bold">2 New Messages</p>
+                    </div>
+                </div>
+            </div>
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="pictures/profile4.jpg" />
+                        </div>
+                        <div>
+                            <h5>Toka Sefadi</h5>
+                            <p class="text-muted">19 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="pictures/sano.jpg" />
+                        </div>
+                        <div>
+                            <h5>Ratlehile Tele </h5>
+                            <p class="text-muted">27 mutual friends</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+                <div class="request">
+                    <div class="info">
+                        <div class="profile-pic">
+                            <img src="pictures/fixer.jpg" />
+                        </div>
+                        <div>
+                            <h5>Danny Okwered</h5>
+                            <p class="text-muted">4 mutual friend</p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">Accept</button>
+                        <button class="btn">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</main>
+<script src="javascript.js"></script>
+</body>
+</html>
